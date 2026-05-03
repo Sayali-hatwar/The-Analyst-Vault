@@ -1,21 +1,47 @@
-# Himalaya Trekkers Club Website
+# HTML Learning Projects
 
-A collection of HTML pages showcasing the Himalaya Trekkers Club, featuring expedition information, user profiles, and project documentation.
+A comprehensive collection of different HTML files and mini-projects designed for learning and practicing HTML5 and CSS3 concepts.
+
+## Overview
+
+This folder contains multiple independent HTML files and projects, each demonstrating different HTML features and design patterns. From basic templates to complete landing pages and profile systems.
 
 ## Project Structure
 
-- `Himalaya_trakkers_club.html` - Main landing page with hero section for K2 expedition
-- `basic_.html` - Basic HTML template
-- `mid_.html` - Intermediate HTML page
-- `user.html`, `user1.html`, `user2.html` - User profile pages
-- `Eco-Track-project/` - Subfolder containing eco-tracking project files
+### Main Projects
+
+- **Himalaya_trakkers_club.html** - Professional landing page featuring a K2 expedition with hero section, overlay text, and responsive design patterns
+
+- **Eco-Track-project/** - Separate eco-tracking project folder
   - `main.html` - Main project page
-  - `doc.txt` - Documentation
-  - `h4.jfif` - Project image
+  - `doc.txt` - Project documentation
+  - `h4.jfif` - Project imagery
+
+### Learning Files
+
+- **basic_.html** - Basic HTML template for beginners
+- **mid_.html** - Intermediate HTML concepts
+- **user.html**, **user1.html**, **user2.html** - User profile page variations
+
+### Media Assets
+
+- `img_sunflower.jfif` - Flower image asset
+- `img-himalaya1.jfif` - Himalayan landscape image
+- `html_info.txt` - HTML reference notes
 
 ## How to View
 
-Simply open any `.html` file in your web browser to view the pages. No server required for static HTML.
+Simply open any `.html` file in your web browser to view it. No server required—all files are static HTML and CSS.
+
+## Learning Outcomes
+
+By exploring these files, you'll learn about:
+- HTML5 structure and semantic elements
+- CSS styling and layouts
+- Responsive design patterns
+- Hero sections and overlay techniques
+- Form integration and links
+- Image handling and optimization
 
 ## Images
 
