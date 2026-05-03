@@ -1,0 +1,15 @@
+-- Semantic-Tag: tags that gives information and are descriptive about
+ their function
+ ** Common Semantic Tags **
+1. <header>, <nav>, <main>, <footer>: Used to structure the major 
+    parts of a document.
+2. <article>, <section>, <aside>: Define specific content types,
+    such as independent articles, thematic groupings, or related side content.
+3. <figure>/<figcaption>: Used to pair visual content with a caption. 
+
+
+-- Non-descriptive-Tag: <div> which are common for any type of function
+
+-- In style if called with class name call it with .class_name or if called 
+with div name no dot is required. 
+

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eco-Track 2026</title>
+    <style>
+
+
+.header {
+  text-align: center;
+  background-image: url(g.jpg);
+  padding: 20px;
+  font-size: 2em;
+  color: white;
+  /*background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+aside {
+  width: 25%; /* Takes up a quarter of the screen */
+  background-color: #a7e3c5;
+  display: block;
+  padding: 10px;
+  gap: 20px;
+}
+
+aside nav ul li {
+    margin-bottom: 20px; /* This creates the distance between links */
+}
+
+aside nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+}
+aside nav ul li a:hover {
+    color: #3782d2; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+main {
+  flex: 1; /* Automatically fills the rest of the right side */
+  text-decoration-color: white;
+  padding: 10px;
+}
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto ;
+            gap: 20px;
+            background-color: #43ac8b;
+            
+            
+        }
+
+       .square-card {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            flex-wrap: wrap;
+            padding: 10px;
+            
+        }
+        .square-card > div {
+            background-color: rgb(238, 240, 240);
+            border: 1px solid black;
+           text-align: center;
+           margin: 5px;  
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           
+        }
+
+       .countries {
+            padding: 10px;
+                text-align: center;
+                text-shadow: 1px 1px 2px white;
+        }
+        table {
+            width: 80%;
+            border-collapse:separate;
+            margin: 0 auto;
+            background-color: rgb(232, 248, 248);
+        }
+
+        table th{
+            background-color:rgb(92, 150, 147);}
+        
+            .map {
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 10px;
+                text-shadow: 1px 1px 2px white;
+            }
+
+            .searchbar {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 20px;
+            }
+
+             .weblink {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+             .filter {
+                text-align: center;
+                margin-top: 20px;
+            }
+           
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function searchRegion() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase().trim();
+            
+            // Weather forecast URLs for different regions
+            const weatherLinks = {
+                'asia': 'https://www.accuweather.com/en/asia/weather',
+                'europe': 'https://www.accuweather.com/en/europe/weather',
+                'americas': 'https://www.accuweather.com/en/americas/weather',
+                'africa': 'https://www.accuweather.com/en/africa/weather',
+                'india': 'https://www.accuweather.com/en/in/weather',
+                'china': 'https://www.accuweather.com/en/cn/weather',
+                'united states': 'https://www.accuweather.com/en/us/weather',
+                'russia': 'https://www.accuweather.com/en/ru/weather',
+                'brazil': 'https://www.accuweather.com/en/br/weather'
+            };
+            
+            if (searchInput === '') {
+                alert('Please enter a region or country name');
+                return;
+            }
+            
+            // Check if search input matches any region
+            if (weatherLinks[searchInput]) {
+                window.open(weatherLinks[searchInput], '_blank');
+            } else {
+                alert('Weather forecast not available for "' + searchInput + '". Try: asia, europe, americas, africa, india, china, united states, russia, or brazil');
+            }
+        }
+        
+        // Allow pressing Enter to search
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            if (searchInput) {
+                searchInput.addEventListener('keypress', function(event) {
+                    if (event.key === 'Enter') {
+                        searchRegion();
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1 class="header">Eco-Track 2026</h1>
+    
+<div class="container">
+ 
+    <aside> <!--content that is "indirectly related" to the main content-->
+<nav>
+    <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#regional_data">Regional Data</a></li>
+        <li><a href="#predictivemodel">Predictive Model</a></li>
+    </ul>
+</nav>
+</aside>
+
+<main> 
+    <div id = "overview" class="square-card">
+    <div class="pt1"><p><strong>KPI 1:</strong> Global Temp Increase (+1.2°C)</p></div>
+    <div class="pt2"><p><strong>KPI 2:</strong> Carbon Level (420 ppm)</p></div>
+    <div class="pt3"><p><strong>KPI 3:</strong> Sea Level Rise (+3.4mm)</p></div>
+    <div class="pt4"><p><strong>KPI 4:</strong> Renewable Energy Share (29%)</p></div>
+
+</div>
+
+<div id="regional_data" class="countries">
+    <h2>Top 5 Carbon Emitting Countries</h2>
+<!--It must have a header row, 5 data rows, and a footer row showing the "Global Total."-->
+<table border="1">
+    
+    <thead>
+    <tr>
+        <th>Country</th>
+        <th>Emission Score</th>
+    </tr>
+    </thead>
+    
+
+    <tbody>
+    <tr>
+        <td>United States</td>
+        <td>1500</td>
+    </tr>
+
+    <tr>
+        <td>China</td>
+        <td>1000</td>
+    </tr>
+
+   <tr>
+      <td>India</td>
+      <td>800</td>
+   </tr>
+   
+   <tr>
+      <td>Russia</td>
+      <td>700</td>
+    </tr>
+
+    <tr>
+        <td>Brazil</td>
+        <td>500</td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr>
+       <td><strong>Grand Total:</strong> </td>
+       <td><strong>4500</strong></td>
+    </tr>
+    </tfoot>
+    
+        
+</table>
+</div>
+
+<div id="predictivemodel" class="map">
+    <p>Country CO2 Emissions</p>
+    <img src="c.jpg" 
+    alt="carbon-emission-countries"
+    width="400"
+    height="500">
+
+
+</div>
+
+<div class="weblink">
+    <a href="https://www.accuweather.com/en/world-weather" target="_blank">View Global Weather Forecast</a>
+</div>
+
+<div class="filter">
+    <p>Filter by Region:</p>
+    <select name="region" id="region">
+        <option value="all">All</option>
+        <option value="asia">Asia</option>
+        <option value="europe">Europe</option>
+        <option value="americas">Americas</option>
+        <option value="africa">Africa</option>
+    </select>
+</div>
+
+<div class="searchbar">
+    <input type="text" id="searchInput" placeholder="Search region or country (e.g., asia, europe, india)">
+    <button type="button" onclick="searchRegion()">Search</button>
+</div>
+</main>
+</div>
+
+
+
+
+</body>
+
+</html>

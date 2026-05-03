@@ -1,0 +1,47 @@
+Phase 1: The Layout (The Skeleton)
+A data analyst needs to present information clearly. Your dashboard should not be one long scrolling page; it should feel like an application.
+
+The Container: How will you wrap the entire page to ensure it doesn't spill over on ultra-wide monitors?
+
+The Sidebar: Create a navigation bar on the left side. It should contain links for "Overview," "Regional Data," and "Predictive Models."
+
+Hint: Use a semantic tag that represents "side" content.
+
+The Main Grid: To the right of the sidebar, create a section that holds four small KPI cards (Key Performance Indicators) at the top.
+
+KPI 1: Global Temp Increase (+1.2°C)
+
+KPI 2: Carbon Level (420 ppm)
+
+KPI 3: Sea Level Rise (+3.4mm)
+
+KPI 4: Renewable Energy Share (29%)
+
+Phase 2: Data Representation (The Meat)
+The Data Table: Below the KPI cards, I want a table showing the "Top 5 Carbon Emitting Countries."
+
+Requirements: It must have a header row, 5 data rows, and a footer row showing the "Global Total."
+
+Hint: Use <thead>, <tbody>, and <tfoot> for extra "clean code" points.
+
+The Visual Placeholder: Data analysts use charts. Since we are only using HTML/CSS, create a div that represents a "Heatmap."
+
+Challenge: Inside this div, create 10 small squares of different shades of red/orange using inline styles or classes to represent intensity.
+
+Phase 3: The "Analyst" Touch
+Data Source Citation: Every good analyst cites their work. Add a section at the bottom with a clickable link to NASA's climate data, but make it open in a new tab so the user doesn't leave your dashboard.
+
+User Input: Add a "Filter" section. Create a dropdown menu (select) for choosing a Year (2020-2026) and a search bar to look up a specific country.
+
+🛠️ Your Constraints
+Semantic HTML only: Use tags like <header>, <main>, <section>, and <aside>. Avoid using <div> for everything.
+
+External Styling: I want you to create a separate <style> block (or a .css file) to handle the colors.
+
+Color Palette: Use a "Dark Mode" aesthetic.
+
+Background: Very dark grey or navy.
+
+Text: Off-white.
+
+Accents: Mint green or Neon Blue.

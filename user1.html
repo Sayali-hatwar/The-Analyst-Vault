@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+<h1 class="header">Intermediate HTML</h1>
+
+/* In style if called with class name call it with .class_name or if called with div name no dot is required. */
+
+
+<head>
+    <title>The Tech Ecosystem Dashboard</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: rgb(227, 171, 98);
+            padding: 30px;
+        }
+        .header {
+            text-align: center;
+            color: black;
+        }
+        .Name, .accomplishment, .skills-to-learn, .references {
+            background-color: brown;
+            border:  1px solid black;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        table {
+            background-color: white;
+            width: 100%;
+            border-collapse: collapse; /*removes double borders*/
+            margin-top: 8px;
+        }
+
+    th {
+        background-color: white;
+        border: 1px solid black;
+        padding: 5px;
+        text-align: middle;
+    }
+    td {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: middle}
+    tr {
+        background-color: #e9773d;
+    }
+
+    ol {
+        list-style-type:decimal;
+        padding-left: 30px;
+    }
+    ul {
+        list-style-type: square;
+        padding-left: 30px;
+    }
+
+.dashboard-image {
+    max-width: fit-content;
+    border-radius: 10px;
+    border: 5px solid brown;
+    margin-top: 20px;
+    corner-shape: square;
+    display: inline-block;
+
+} /* Compulsory to write both styles for adjustment
+ and unecessary spaces..one for box style and one for image adjustment*/
+.dashboard-image img {
+    display: block;         /* Removes the bottom gap */
+    max-width: 100%;        /* Ensures it doesn't break your layout */
+    height: auto;
+}
+    </style>
+</head>
+<body>
+   <div class="Name">
+    <h1>
+        Sayali Hatwar
+    </h1>
+    <p><strong>
+        Mission Statement : "Let's crack Data Analyst"
+    </strong></p>
+    </div>
+
+    <div class="accomplishment">
+<h2>Big Three</h2>
+<ul>
+    <li>Total Projects Completed: 15+</li>
+    <li>Hourse of Coding: 500+</li>
+    <li>Data Tools Mastered: 5+</li>
+</ul>
+</div>
+
+<div class="skills proficiency">
+<h3>Tech Stack</h3>
+<table border="1">
+    <tr>
+        <th>Tool Name</th>
+        <th>Primary Use</th>
+        <th>Confidence Level</th>
+    </tr>
+    <tr>
+        <td>SQL</td>
+        <td>Database</td>
+        <td>Advance</td>
+    </tr>
+    <tr>
+        <td>Python</td>
+        <td>Programming</td>
+        <td>Average</td>
+    </tr>
+    <tr>
+        <td>PowerBI</td>
+        <td>Visualization & measures</td>
+        <td>Basic</td>
+    </tr>
+    <tr>
+        <td>Excel</td>
+        <td>Visualization & Sheets</td>
+        <td>Proficient</td>
+    </tr>
+</table>
+</div>
+
+<div class ="skills-to-learn">
+    <h3>Three things to learn in <code> html</code> </h3>
+<ol>
+    <li> <span>Styling</span></li> 
+    <!--Tag(span): It’s the "inline" version of a <div>.
+         It doesn't change the look, but it all-->
+    <li> <span>Profiling</span></li>
+    <li> <span>Designing</span></li>
+</ol>
+</div>
+
+<div class="references">
+    <h3>Resource Library</h3>
+    <ul>
+        <li><a href="https://www.scaler.com/event/learn-data-science-machine-learning/?utm_source=ads&utm_medium=googlesearch&utm_campaign=perf_scaler-dsml_requestcallback_ads_googlesearch_dsa-new_key-metros_25-45&utm_content=dsa-data-science-new&utm_term=&param1=693360064288&param2=c&param3=&gad_source=1&gad_campaignid=21088132974&gbraid=0AAAAADQ037yDbz6_rDctD-_6xazDPSKQl&gclid=Cj0KCQjwkYLPBhC3ARIsAIyHi3RqnwDwOExu7TQPLZxxJDSKlSvoPLHsLwolHMXfO2n14-3cdxkjpDQaAgfOEALw_wcB">Scalar</a></li>
+       <li><a href="https://www.mygreatlearning.com/northwestern-university-masters-data-science?&utm_source=Search&utm_medium=data-science-br-masters&utm_campaign=NWU-MSDS-india-hi-data-science--25-64&campaign_id=19328922364&adgroup_id=144639599037&ad_id=642262999115&utm_target=kwd-296267311360&Keyword=masters%20in%20data%20science&placement=&custom_lp=masters%20in%20data%20science&gad_source=1&gad_campaignid=19328922364&gbraid=0AAAAACoiIDrmUWrwzheeUXXHRc9ylMcAu&gclid=Cj0KCQjwkYLPBhC3ARIsAIyHi3S4P0e7yuTUnQmWFmJMKnNww0ye55WOY2iVSfttq55Bo5-v8xfQlw0aAtquEALw_wcB">GreatLearning</a></li>  
+       <li><a href="https://www.coursera.org/browse/data-science">Coursera</a></li>   
+    </ul>
+</div>
+<div class="dashboard-image">
+    <img src="lion_cubs.webp"
+    width="600"
+    height="400">
+</div>
+
+
+
+
+</body>
+
+
+
+
+</html>

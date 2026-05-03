@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Himalayan Trekker's Club </title>
+    <style>
+    body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+     .Hero_Card {
+            position: relative;
+            overflow: hidden;
+            height: 60vh;
+            min-height: 500px;
+            width: 100%;
+            background-color: black; /* Fallback color */
+            background-image: url("himalaya.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img_himalaya {
+            display: none;
+        }
+        
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+            color:white;
+            
+        }
+
+        .overlay-text h1 {
+            font-weight: 700;
+            font-size: 48px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #00f2ff; /* Changed from black for better contrast */
+            margin: 0;
+            /*white-space: nowrap;  Prevents text from wrapping to the next line */
+        }
+        
+        .overlay-text h3{
+            font-size: 28px;
+             margin: 10px 0;
+        }
+
+        .overlay-text ul{
+            padding: 0;
+            list-style-type: none;
+           
+            
+
+        }
+        .overlay-text ul li{
+            font-size: 18px;
+             display: inline;
+        }
+        li:not(:last-child)::after {
+             content: " | ";
+             padding: 0 10px;
+             
+}
+
+.overlay-text button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color:orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.overlay-text button a {
+    color: white;
+    text-decoration: none;
+}
+
+.overlay-text button:hover {
+    background-color: #ff6a00;
+    
+}
+</style>
+</head>
+
+<body>
+    <section class="Hero_Card">
+        <div class="overlay-text">
+        <h1>K2: THE SAVAGE MOUNTAIN</h1>
+        <h3>Expedition Summer 2026</h3>
+        <ul>  
+                        <li>8,611m Altitude</li> 
+                        <li>No Oxygen Support</li>
+                        <li>Elite Teams Only</li>
+        </ul>
+        <button><a href="https://form.typeform.com/to/V6rbEepU" target="_blank">Claim your spot</a></button>
+        </div>
+
+
+    </section>
+    
+</body>
+
+
+
+</html>
